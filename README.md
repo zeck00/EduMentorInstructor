@@ -47,10 +47,6 @@ We prioritize the security of instructors' data and materials:
 4. **📱 Responsive Access**: Access your dashboard from any device, anytime, anywhere.
 
 
-## 📜 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## 💡 Feedback
 
 Your feedback is always welcome! If you encounter any issues, feel free to open an issue on the repo or contact us directly. 🗣️💬
