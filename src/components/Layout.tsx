@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { Menu, X, Home, BookOpen, Settings, LogOut } from 'lucide-react';
 import { useAuthStore } from '../store/authStore';
 import { useThemeStore } from '../store/themeStore';
+import appLogo from '../assets/applogo.png';
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -35,7 +36,7 @@ export default function Layout({ children }: LayoutProps) {
           <div className="flex items-center justify-between h-16 px-4 border-b dark:border-gray-700">
             <div className="flex items-center">
               <img 
-                src="/assets/applogo.png" 
+                src={appLogo} 
                 alt="EduMentor Logo" 
                 className="h-8 w-8 mr-2"
               />
