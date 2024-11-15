@@ -35,11 +35,6 @@ We prioritize the security of instructors' data and materials:
 - **🛠️ Built With**: This project is built using TypeScript (TS) and TSX files for React components. We love the type safety that TypeScript brings! 🔥
 - **📦 Dependencies**: Managed with `npm` for ease of installation and updates.
 
-### 🛠️ Installation Steps:
-
-1. Clone the repository: `git clone <repo-url>`
-2. Install dependencies: `npm install` 📦
-3. Start the development server: `npm start` ⚡
 
 ## 🤓 How to Use
 
@@ -51,18 +46,6 @@ We prioritize the security of instructors' data and materials:
    - **View and Re-upload** current files.
 4. **📱 Responsive Access**: Access your dashboard from any device, anytime, anywhere.
 
-## 📸 Screenshot Preview
-
-![Instructor Dashboard](https://example.com/screenshot.png) *(Replace this with your actual screenshot URL)*
-
-## 🤝 Contributing
-
-Feel free to contribute! 🙌
-- Fork it 🍴
-- Create your feature branch: `git checkout -b feature/super-feature` 🚧
-- Commit your changes: `git commit -m 'Add some super feature'` ✨
-- Push to the branch: `git push origin feature/super-feature` 🚀
-- Open a pull request 📬
 
 ## 📜 License
 
