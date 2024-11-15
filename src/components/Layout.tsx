@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { Menu, X, Home, BookOpen, Settings, LogOut } from 'lucide-react';
 import { useAuthStore } from '../store/authStore';
 import { useThemeStore } from '../store/themeStore';
-import appLogo from '../assets/applogo.png';
+import appLogo from '/src/assets/applogo.png';
 
 interface LayoutProps {
   children: React.ReactNode;
