@@ -12,7 +12,7 @@ export default function Layout({ children }: LayoutProps) {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const navigate = useNavigate();
   const logout = useAuthStore((state) => state.logout);
-  const { isDark, toggleTheme } = useThemeStore();
+  const { isDark } = useThemeStore();
 
   const navigation = [
     { name: 'Dashboard', href: '/dashboard', icon: Home },
@@ -33,7 +33,14 @@ export default function Layout({ children }: LayoutProps) {
           sidebarOpen ? 'translate-x-0' : '-translate-x-full'
         } md:translate-x-0 transition-transform duration-200 ease-in-out`}>
           <div className="flex items-center justify-between h-16 px-4 border-b dark:border-gray-700">
-            <h1 className="text-xl font-bold text-primary dark:text-primary">EduMentor</h1>
+            <div className="flex items-center">
+              <img 
+                src="/assets/applogo.png" 
+                alt="EduMentor Logo" 
+                className="h-8 w-8 mr-2"
+              />
+              <h1 className="text-xl font-bold text-primary dark:text-primary">EduMentor</h1>
+            </div>
             <button
               className="md:hidden"
               onClick={() => setSidebarOpen(false)}
