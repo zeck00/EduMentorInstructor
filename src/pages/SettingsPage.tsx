@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Bell, Mail, Lock, Moon, Sun } from 'lucide-react';
+import { Bell, Mail, Moon, Sun } from 'lucide-react';
 import Layout from '../components/Layout';
 import { useThemeStore } from '../store/themeStore';
 
@@ -83,27 +83,6 @@ export default function SettingsPage() {
                   />
                 </button>
               </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="bg-white rounded-xl shadow-md">
-          <div className="p-6">
-            <h2 className="text-xl font-semibold text-gray-900 mb-4">Security</h2>
-            
-            <div className="space-y-4">
-              <button
-                onClick={() => {}}
-                className="w-full flex items-center justify-between p-4 bg-gray-50 rounded-lg hover:bg-gray-100"
-              >
-                <div className="flex items-center space-x-3">
-                  <Lock className="h-5 w-5 text-gray-600" />
-                  <div className="text-left">
-                    <p className="font-medium text-gray-900">Change Password</p>
-                    <p className="text-sm text-gray-500">Update your password</p>
-                  </div>
-                </div>
-              </button>
             </div>
           </div>
         </div>

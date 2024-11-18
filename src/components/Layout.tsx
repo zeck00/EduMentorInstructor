@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Menu, X, Home, BookOpen, Settings, LogOut } from 'lucide-react';
+import { Menu, X, Home, BookOpen, Settings, LogOut, Info, Shield, FileText } from 'lucide-react';
 import { useAuthStore } from '../store/authStore';
 import { useThemeStore } from '../store/themeStore';
 import appLogo from '/assets/applogo.png';
@@ -19,6 +19,9 @@ export default function Layout({ children }: LayoutProps) {
     { name: 'Dashboard', href: '/dashboard', icon: Home },
     { name: 'Courses', href: '/courses', icon: BookOpen },
     { name: 'Settings', href: '/settings', icon: Settings },
+    { name: 'About', href: '/about', icon: Info },
+    { name: 'Privacy Policy', href: '/privacy-policy', icon: Shield },
+    { name: 'Terms', href: '/terms', icon: FileText },
   ];
 
   const handleLogout = () => {
@@ -38,7 +41,7 @@ export default function Layout({ children }: LayoutProps) {
               <img 
                 src={appLogo} 
                 alt="EduMentor Logo" 
-                className="h-8 w-8 mr-2"
+                className="h-8 w-8 rounded-[5px] mr-2"
               />
               <h1 className="text-xl font-bold text-primary dark:text-primary">EduMentor</h1>
             </div>
@@ -80,6 +83,11 @@ export default function Layout({ children }: LayoutProps) {
               >
                 <Menu className="h-6 w-6" />
               </button>
+              
+              <div className="flex items-center gap-2">
+                <span className="text-sm text-gray-500">Instructor</span>
+                <span className="font-medium text-gray-900 dark:text-white">Ziad Ahmad</span>
+              </div>
             </div>
           </div>
           <main className="pb-8">
